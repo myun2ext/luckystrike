@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'lucky_strike/version'
+require 'luckystrike/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "luckystrike"
@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["myun2"]
   spec.email         = ["myun2@nwhite.info"]
 
-  spec.summary       = "Lucky Strike"
-  spec.description   = "Lucky Strike"
+  spec.summary       = "Rails based Web Application Framework (ruby)"
+  spec.description   = "Rails based Web Application Framework (ruby)"
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "rails", "~> 4.2.0"
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
 end
