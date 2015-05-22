@@ -1,4 +1,4 @@
-require "lucky_strike/version"
+require "luckystrike/version"
 
 module LuckyStrike
   # Your code goes here...
